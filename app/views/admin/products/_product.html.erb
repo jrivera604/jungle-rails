@@ -1,5 +1,10 @@
 <tr>
-  <td>
+<td class="img">
+<%if product.quantity == 0%>
+<aside class="sold-out">
+  SOLD OUT
+</aside>
+<% end%>
     <%= image_tag product.image.tiny.url %>
   </td>
   <td>
